@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inputs</title>
+</head>
+<body>
+<form>
+  <input type="date" id="start" name="trip-start" value="2018-07-22"
+  min="2018-01-01" max="2018-12-31"> <br>
+  <label for="meeting-time">choose a time for your appointment:</label> <br>
+  <input type="datetime-local" id="meeting-time" name="meeting-time"
+  value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00"> <br>
+  <label for="email">Enter your email here:</label> <br>
+  <input type="email" id="email" pattern=".+@email.com" size="30" required> <br>
+  <label for="avatar">choose your profile picture:</label> <br>
+  <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"> <br>
+  <input id="prodId" name="prodId" type="hidden" value="xm234jq">
+  <P>sign in to your account:</p>  <div>
+  <label for="userId">User ID</label> <br> <input type="text" id="userID"
+  name="userID"> </div> <br>
+
+  <input type="image" id="image" alt="Login"
+src="images/login-button.png">
+<br>
+<label for="start">start month:</label>
+<br>
+<input type="month" id="start" name="start"
+min="2018-03" value="2018-05">
+<br>
+<label for="tentacles">number of tentacles (10-100):</label>
+<br>
+<input type="number" id="tentacles" name="tentacles"
+min="10" max="100">
+<br>
+<p>Select a maintenance drone:</p>
+
+<div>
+  <input type="radio" id="huey" name="drone" value="huey"
+  checked>
+<label for="huey">Huey</label>
+</div>
+<div>
+  <input type="radio" id="dewey" name="drone" value="dewey"
+  >
+<label for="huey">dewey</label>
+</div>
+<br>
+<p>Auido settings:</p>
+<div>
+<input type="range" id="volume" name="volume" min="0" max="11">
+<label for="volume">Volume</label>
+</div>
+<br>
+<label for="site-search">Search the site:</label>
+<br>
+<input type="search" id="site-search" name="q"
+aria-label="search through site content">
+<br>
+<button>Search</button>
+<br>
+<label for="phone">Enter your phone number:
+</label>
+<br>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required>
+<br>
+<small>Format: 123-456-7890</small>
+<br>
+<label for="appt">Choose time for your meeting:</label>
+<br>
+<input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+<br>
+<small>Office hours are 9am to 6pm</small>
+<br>
+<label for="url">Enter an https:// URL:
+</label>
+<br>
+<input type="url" name="url" id="URL"
+placeholder="https://example.com"
+pattern="https://.*" size="30" required>
+<br>
+<label for="week">Choose a week in May or June:</label>
+<br>
+<input type="week"name="week"id="camp-week"
+min="2018-W18"max="2018-W26"required>
+<input type="submit" value="send request">
+</form>
+</body>
+</html>
